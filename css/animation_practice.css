@@ -1,0 +1,83 @@
+/* this is where all of your CSS styles go */
+.container{
+	width: 700px;
+	height: 100px;
+	position: relative;
+	left: 40%;
+}
+.letter{
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+@keyframes l_move{
+	0% {left: 0px;}
+	20% {left: 0px;}
+	80% {left: 85px;}
+	100% {left: 85px;}
+}
+.l{
+	position: relative;
+	animation: l_move 2s linear alternate infinite;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes s_move{
+	0% {right: 0px;}
+	20% {right: 0px;}
+	80% {right: 90px;}
+	100% {right: 90px;}
+}
+.s{
+	position: relative;
+	animation: s_move 2s linear alternate infinite;
+	animation-delay: 1.1s;
+	animation-fill-mode: forwards;
+}
+@keyframes e_move{
+	0% {right: 0px;}
+	20% {right: 0px;}
+	80% {right: 60px;}
+	100% {right: 60px;}
+}
+.e{
+	position: relative;
+	animation: e_move 2s linear alternate infinite;
+	animation-delay: 1.2s;
+	animation-fill-mode: forwards;
+}
+@keyframes t_move{
+	0% {left: 0px;}
+	20% {left: 0px;}
+	80% {left: 120px;}
+	100% {left: 120px;}
+}
+.t{
+	position: relative;
+	animation: t_move 2s linear alternate infinite;
+	animation-delay: 1.3s;
+	animation-fill-mode: forwards;
+}
+@keyframes n_move{
+	0% {right: 0px;}
+	20% {right: 0px;}
+	80% {right: 60px;}
+	100% {right: 60px;}
+}
+.n{
+	position: relative;
+	animation: n_move 2s linear alternate infinite;
+	animation-delay: 1.4s;
+}
+@keyframes i_color{
+	0% {color: black;}
+	20% {color: black;}
+	80% {color: red;}
+	100% {color: red;}
+}
+.i{
+	animation: i_color 2s linear alternate infinite;
+	animation-delay: 1s;
+	z-index: 2;
+}
